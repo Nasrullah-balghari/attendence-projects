@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin panel</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- main div -->
+    <div class="containeR">
+        <!-- nav-bar start -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> <img id="logo" src="./images/logo2.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <i class="fa-solid fa-laptop-code icon"></i>
+                                <span class="nav-item">Dashboard</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./classDetails.html">
+                                <i class="fa-solid fa-calendar-week icon"></i>
+                                <span class="nav-item">Class Details</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./student.html">
+                                <i class="fa-solid fa-users icon"></i>
+                                <span class="nav-item">Students Details</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./attend.html">
+                                <i class="fa-solid fa-chart-simple icon"></i>
+                                <span class="nav-item">Attendance</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-cog icon"></i>
+                                <span class="nav-item">Setting</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-sign-out-alt icon"></i>
+                                <span class="nav-item">Log out</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar lind end -->
+
+        <!-- start slider -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img id="slider_img" src="./images/regis.webp" class="d-block w-100" alt="img">
+                </div>
+                <div class="carousel-item">
+                    <img id="slider_img" src="./images/chasing-clock-businessperson-760.png" class="d-block w-100"
+                        alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img id="slider_img" src="./images/reg.jfif" class="d-block w-100" alt="img">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- slider end -->
+
+        <!-- start cards -->
+        <div class="cards_div">
+            <div class="card col-md-3" style="width: 18rem;">
+                <img id="card_img" src="./assets/mobile.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">Web and Mobile</h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card col-md-3" style="width: 18rem;">
+                <img id="card_img " src="./assets/uiux.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">UI UX Designer</h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card col-md-3" style="width: 18rem;">
+                <img id="card_img" src="./assets/web.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title">Frontend Dev</h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+        </div>
+        <!-- card end -->
+
+        <!-- new card start -->
+        <div class="main_car_div">
+            <div id="inner_card" class="card" style="width: 18rem;">
+                <img src="./assets/blog-1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h1 class="card-title">Mobile Repair</h1>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div id="inner_card" class="card" style="width: 18rem;">
+                <img src="./assets/blog-2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h1 class="card-title">Graphic</h1>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- new card end -->
+
+    <!-- attendence list start -->
+    <section class="attendance">
+        <div class="attendance-list">
+            <h1>Attendance List</h1>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Depart</th>
+                        <th>Date</th>
+                        <th>Join Time</th>
+                        <th>Logout Time</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Sam David</td>
+                        <td>Design</td>
+                        <td>03-24-22</td>
+                        <td>8:00AM</td>
+                        <td>3:00PM</td>
+                        <td><button>View</button></td>
+                    </tr>
+                    <tr class="active">
+                        <td>02</td>
+                        <td>Balbina Kherr</td>
+                        <td>Coding</td>
+                        <td>03-24-22</td>
+                        <td>9:00AM</td>
+                        <td>4:00PM</td>
+                        <td><button>View</button></td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>Badan John</td>
+                        <td>testing</td>
+                        <td>03-24-22</td>
+                        <td>8:00AM</td>
+                        <td>3:00PM</td>
+                        <td><button>View</button></td>
+                    </tr>
+                    <tr>
+                        <td>04</td>
+                        <td>Sara David</td>
+                        <td>Design</td>
+                        <td>03-24-22</td>
+                        <td>8:00AM</td>
+                        <td>3:00PM</td>
+                        <td><button>View</button></td>
+                    </tr>
+    </section>
+    <!-- bootstrap-link -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

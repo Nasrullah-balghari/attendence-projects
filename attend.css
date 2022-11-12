@@ -1,0 +1,28 @@
+.rollNo{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.rollNo input{
+    padding: 10px 30px 10px 5px;
+    border-radius: 5px;
+    border: 2px solid #2d3436;
+}
+.rollNo select{
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #2d3436;
+}
+.rollNo button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #74b9ff;
+    transition: .5s;
+}
+.rollNo button:hover{
+    opacity: 0.6;
+}

@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.logo img {
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+
+}
+
+nav {
+    background-color: #bdc3c7;
+    width: 100%;
+    padding: 15px;
+}
+
+nav ul {
+    overflow: hidden;
+    transition: 1s;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    color: #bdc3c7;
+    font-weight: 500;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+div#navbarNav {
+    display: flex;
+    justify-content: flex-end;
+}
+span.nav-item {
+    padding: 0px 5px;
+}
+#logo{
+    width: 200px;
+}
+.courses h1 {
+    background-color: #bdc3c7;
+    width: 100%;
+    margin-top: 0;
+}
+.icon {
+    color: #2c3e50;
+    font-size: 25px;
+}
+
+nav ul li span {
+    color: #2c3e50;
+
+}
+
+#slider_img {
+    width: 100%;
+    height: 500px;
+}
+
+.cards_div {
+    background-color: #bdc3c7;
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    cursor: pointer;
+    border-radius: 10px !important;
+    box-shadow: 3px 3px 14px 0px rgba(86, 80, 80, 0.75);
+    -webkit-box-shadow: 3px 3px 14px 0px rgba(96, 91, 91, 0.75);
+    -moz-box-shadow: 3px 3px 14px 0px rgba(94, 90, 90, 0.75);
+}
+
+.main_car_div {
+    background-color: #bdc3c7;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#inner_card{
+    width: 350px !important;
+    border-radius: 20px !important;
+}
+#inner_card img{
+    border-radius: 10px 10px 0px 0px;
+}
+/*Attendance List serction  */
+.attendance{
+    /* margin-top: 0px; */
+    text-transform: capitalize;
+    background-color: #bdc3c7;
+  }
+  .attendance-list{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background:#bdc3c7;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  }
+  .attendance-list table tr{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 15px;
+    min-width: 100%;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+  }
+  table thead tr{
+    color: #fff;
+    background: #36674c;
+    text-align: left;
+    font-weight: bold;
+  }
+  .table th,
+  .table td{
+    padding: 12px 15px;
+  }
+  .table tbody tr{
+    border-bottom: 1px solid #ddd;
+  }
+  .table tbody tr:nth-of-type(odd){
+    background: #f3f3f3;
+  }
+  .table tbody tr.active{
+    font-weight: bold;
+    color:#2e513e;
+  }
+  .table tbody tr:last-of-type{
+    border-bottom: 2px solid #a7f4c7;
+  }
+  .table button{
+    padding: 6px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #4AD489;
+  }
+  .table button:hover{
+    background: #4AD489;
+    color: #fff;
+    transition: 0.5rem;
+  }
+
+
+@media only screen and (max-width: 848px) {
+    .card {
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .card {
+        width: 100% !important;
+    }
+    #inner_card{
+        width: 100% !important;
+    }
+}
